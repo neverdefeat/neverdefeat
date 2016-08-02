@@ -1,6 +1,39 @@
 ﻿<html>
+<script src="jquery-1.8.1.min.js"></script>
+<script src="jquery-ui.js"></script>
+
 <title>NeverDefeat</title>
+<style>
+#tabs{
+background-color:rgb(0, 255, 180);
+width:100%;
+height:200px;
+}
+li{
+
+width: 50px;
+float:left;
+display:inline;
+}
+.divider{
+border:1px #cccccc solid;
+}
+
+</style>
 <script>
+
+
+if(navigator.userAgent.match("Firefox")){
+$(meta).attr("charset","big-5");
+}
+  $(document).ready(function(){
+    $("body").tabs();
+});
+  
+
+
+
+
 </script>
 <style>
 </style>
@@ -8,5 +41,34 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
+<div class="title_area">
+<nav class="top_bar">
+<ul class="u_left">
+	
+	<li class="title"><a href="#tab_1">首頁</a></li>
+	
+	<li class="title"><a href="#tab_2">教學</a></li>
+    	
+	<li class="title"><a href="#tab_3">Page3</a></li>	
+</ul>
+</nav>
+</div>	
+</br>
+<div id="tab_1"><p>NeverDefeat</p></div>
+</br>
+<div id="tab_2">
+<a href="https://download.teamviewer.com/download/TeamViewer_Setup_zhtw.exe">遠端操控下載</a></br>
+<a href="https://java.com/zh_TW/download/">JAVA下載</a></br>
+<a href="http://secure.logmein.com/hamachi.msi">Hamachi虛擬區網</a>
+</div>
+<div id="tab_3"><p>施工中</p></div>
+
+</div>
+</div>
+
+
+
+
+
 </body>
 </html>
