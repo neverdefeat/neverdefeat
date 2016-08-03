@@ -4,5 +4,6 @@ $.ajax({
   url: "https://neverdefeat.github.io/neverdefeat/Minecraft",
   dataType: "html",
     success: function(data){
-	  $("#ic").html(data);
-	}
+	 var body=$(data).find("body");
+	  $("#ic").html(body);
+	}});
