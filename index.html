@@ -1,5 +1,9 @@
 ﻿<html>
-<script src="jquery-1.8.1.min.js"></script>
+
+
+<script src='jquery-1.8.1.min.js'></script>
+
+
 <script src="jquery-ui.js"></script>
 <script src="indexJS.js"></script>
 
@@ -23,7 +27,7 @@ position: absolute;
 
 }
 .title_bar{
-background-color:lightgray;
+
 float:left;
 display:inline;
 }
@@ -56,7 +60,7 @@ position: absolute;
 position: absolute;
   font-size:30px;
   top: 120px;
-  left: 235px;
+  left: 250px;
   width:125px;
   height:50px;  
 }
@@ -64,7 +68,7 @@ position: absolute;
 position: absolute;
   font-size:30px;
   top: 120px;
-  left: 370px;
+  left: 400px;
   width:125px;
   height:50px;  
 }
@@ -151,13 +155,26 @@ left:100px;
 			background-color: gray;
 			color: #fff;
 			height:30px;
+            clear: both;
 		}
+#coppyright{
+position: relative;
+top:-23px;
+
+}
+#contact{
+position: relative;
+top:-43px;
+}
+
 
 </style>
 <script>
+if(navigator.userAgent.match("Firefox")){
 
+alert("抱歉，網頁目前不支援火狐...");
 
-
+}
 
   
 
@@ -166,18 +183,18 @@ left:100px;
 
 </script>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta  charset="utf-8">
 </head>
 <body>
 <div class="title_area">
 <nav class="top_bar">
 <ul class="u_left">
-	<li class="title_bar" ><a href="#tab_1" id="logo">NeverDefeat</a></li>
-	<li class="title_bar" id="tb1"><a href="#tab_2">About</a></li>
+	<li class="title_bar" ><a href="#tab_1" id="logo"><img height="34px" width="200px" src="Image\html\NeverDefeat.png"></a></li>
+	<li class="title_bar" id="tb1"><a href="#tab_2"><img src="Image\html\about.png"></a></li>
 	
-	<li class="title_bar" id="tb2"><a href="#tab_3"><b>ND</b>server<p id="nds">伺服器</p></a></li>
+	<li class="title_bar" id="tb2"><a href="#tab_3"><img  src="Image\html\MCtable.png"></a></li>
     	
-	<li class="title_bar" id="tb3"><a href="#tab_4"><b>MC</b>table<p id="ndt">合成表</p></a></li>	
+	<li class="title_bar" id="tb3"><a href="#tab_4"><img  src="Image\html\NDserver.png"></a></li>	
 </ul>
 </nav>
 </div>	
@@ -232,15 +249,16 @@ left:100px;
 </div>
 
 
-</div>
-</div>
+
 
 
 
 
 
 <div id="footer">
-    <div style="text-align:center;" > <p style="font-size:19px ">&copy; Copyright 2016,NeverDefeat.</p></div>
+    <div id="firehide" style="text-align:center;" > <p id="coppyright" style="font-size:19px ">&copy; Copyright 2016,NeverDefeat.</p>
+    <p id="contact">連絡我們/Contact us: hankyychen@gmail.com</p>
+    </div>
 </div>
 </body>
 </html>
