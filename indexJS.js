@@ -144,7 +144,7 @@ ping = function(ip, callback) {
 //使用：
 new ping('25.60.9.456', function(status, e) {
 // reponded timeout
- if(status=='responded'){}
- else if(status=='timeout'){}
+ if(status=='responded'){$("#c2").hide();$("#c3").hide();}
+ else if(status=='timeout'){$("#c1").hide();$("#c2").hide();}
 
 });
