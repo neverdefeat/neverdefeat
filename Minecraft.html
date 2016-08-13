@@ -11,9 +11,10 @@ html{font-family:標楷體;font-size:19px}
 a{text-decoration:none}
 a:visited{color:blue}
 a:hover{text-decoration:underline; cursor:pointer ;color:red} 
-#toc{background-color:rgb(225,255,255)}
+
 
 li{
+  font-size:16px;
  float: none;
 }
 ul li:hover ul {
@@ -21,6 +22,14 @@ ul li:hover ul {
 }
 ul ul {
   display: none;
+}
+#bar{
+position:fixed;
+border-style:dotted;
+left:950px;
+background-color:rgb(225,255,255);
+cursor: context-menu;
+width:230px;
 }
 </style>
 <script >
@@ -32,8 +41,9 @@ ul ul {
 </head>
 <body>
 
-<div style="float:right; clear:right; margin-bottom:.5em; padding:.5em 0 .8em 1.4em;  max-width:20em;"><span class="toclimit-5"><div id="toc" class="toc"><div id="toctitle"><h2 >目錄</h2>
-<div><ul ><li><span>展開</span>
+<div id="bar" >
+<span class="toclimit-5"><div id="toc" class="toc"><div id="toctitle">
+<div><ul ><li><span><h2>目錄<h2></span>
 <ul>
 <li class="toclevel-2 tocsection-3"><a href="#Ores"><span class="tocnumber"></span> <span class="toctext">礦物</span></a></li>
 <li class="toclevel-2 tocsection-4"><a href="#Overworld"><span class="tocnumber"></span> <span class="toctext">環境</span></a></li>
@@ -49,36 +59,36 @@ ul ul {
 <li class="toclevel-1 tocsection-11"><a href="#Machine_Components"><span class="tocnumber"></span> <span class="toctext">機器零件</span></a></li>
 <li class="toclevel-1 tocsection-12"><a href="#Generators"><span class="tocnumber"></span> <span class="toctext">發電機</span></a>
 <ul>
-<li class="toclevel-2 tocsection-13"><a href="#EU"><span class="tocnumber">6.1</span> <span class="toctext">EU</span></a></li>
-<li class="toclevel-2 tocsection-14"><a href="#Heat"><span class="tocnumber">6.2</span> <span class="toctext">Heat</span></a></li>
-<li class="toclevel-2 tocsection-15"><a href="#Kinetic"><span class="tocnumber">6.3</span> <span class="toctext">Kinetic</span></a></li>
-<li class="toclevel-2 tocsection-16"><a href="#Nuclear_Reactor"><span class="tocnumber">6.4</span> <span class="toctext">Nuclear Reactor</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#EU"><span class="tocnumber"></span> <span class="toctext">電能</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Heat"><span class="tocnumber"></span> <span class="toctext">熱能</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Kinetic"><span class="tocnumber"></span> <span class="toctext">動能</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Nuclear_Reactor"><span class="tocnumber"></span> <span class="toctext">核能</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-17"><a href="#Processors"><span class="tocnumber">7</span> <span class="toctext">Processors</span></a></li>
-<li class="toclevel-1 tocsection-18"><a href="#Agriculture"><span class="tocnumber">8</span> <span class="toctext">Agriculture</span></a></li>
-<li class="toclevel-1 tocsection-19"><a href="#Utility"><span class="tocnumber">9</span> <span class="toctext">Utility</span></a>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Processors"><span class="tocnumber"></span> <span class="toctext">處理機</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#Agriculture"><span class="tocnumber"></span> <span class="toctext">農業</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#Utility"><span class="tocnumber"></span> <span class="toctext">功能性</span></a>
+
+<li class="toclevel-2 tocsection-20"><a href="#Miner"><span class="tocnumber"></span> <span class="toctext">採礦機</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Terraformer"><span class="tocnumber"></span> <span class="toctext">環境改造機</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Upgrades"><span class="tocnumber"></span> <span class="toctext">升級配件</span></a></li>
+
+</li>
+<li class="toclevel-1 tocsection-23"><a href="#Armor"><span class="tocnumber"></span> <span class="toctext">裝備</span></a>
 <ul>
-<li class="toclevel-2 tocsection-20"><a href="#Miner"><span class="tocnumber">9.1</span> <span class="toctext">Miner</span></a></li>
-<li class="toclevel-2 tocsection-21"><a href="#Terraformer"><span class="tocnumber">9.2</span> <span class="toctext">Terraformer</span></a></li>
-<li class="toclevel-2 tocsection-22"><a href="#Upgrades"><span class="tocnumber">9.3</span> <span class="toctext">Upgrades</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Material"><span class="tocnumber"></span> <span class="toctext">青銅裝備</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Utility_2"><span class="tocnumber"></span> <span class="toctext">功能性裝備</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-23"><a href="#Armor"><span class="tocnumber">10</span> <span class="toctext">Armor</span></a>
+<li class="toclevel-1 tocsection-27"><a href="#Tools"><span class="tocnumber"></span> <span class="toctext">工具</span></a>
 <ul>
-<li class="toclevel-2 tocsection-24"><a href="#Material"><span class="tocnumber">10.1</span> <span class="toctext">Material</span></a></li>
-<li class="toclevel-2 tocsection-25"><a href="#Energy"><span class="tocnumber">10.2</span> <span class="toctext">Energy</span></a></li>
-<li class="toclevel-2 tocsection-26"><a href="#Utility_2"><span class="tocnumber">10.3</span> <span class="toctext">Utility</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Material_2"><span class="tocnumber"></span> <span class="toctext">青銅工具</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Utility_3"><span class="tocnumber"></span> <span class="toctext">功能性工具</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#Electric"><span class="tocnumber"></span> <span class="toctext">電力工具</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Agriculture_2"><span class="tocnumber"></span> <span class="toctext">農業工具</span></a></li>
 </ul>
-</li>
-<li class="toclevel-1 tocsection-27"><a href="#Tools"><span class="tocnumber">11</span> <span class="toctext">Tools</span></a>
-<ul>
-<li class="toclevel-2 tocsection-28"><a href="#Material_2"><span class="tocnumber">11.1</span> <span class="toctext">Material</span></a></li>
-<li class="toclevel-2 tocsection-29"><a href="#Utility_3"><span class="tocnumber">11.2</span> <span class="toctext">Utility</span></a></li>
-<li class="toclevel-2 tocsection-30"><a href="#Electric"><span class="tocnumber">11.3</span> <span class="toctext">Electric</span></a></li>
-<li class="toclevel-2 tocsection-31"><a href="#Agriculture_2"><span class="tocnumber">11.4</span> <span class="toctext">Agriculture</span></a></li>
 </ul>
-</li>
 </li>
 </ul>
 </ul>
@@ -6637,7 +6647,7 @@ ul ul {
 </td></tr>
 </table>
 
-<h3><span class="mw-headline" id="Utility_2">功能性</span></h3>
+<h3><span class="mw-headline" id="Utility_2">功能性裝備</span></h3>
 <table class="wikitable">
 
 <tr>
@@ -7167,7 +7177,7 @@ ul ul {
 <th class="title">說明
 </th></tr>
 <tr>
-<th class="name"><a href="/index.php?title=Bronze_Pickaxe" title="Bronze Pickaxe">Bronze Pickaxe</a>
+<th class="name"><a href="/index.php?title=Bronze_Pickaxe" title="青銅鎬">青銅鎬</a>
 </th>
 <td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
 	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
@@ -7196,7 +7206,7 @@ ul ul {
 <p><br />	
 </p>
 	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Bronze Pickaxe"><a href="/index.php?title=Bronze_Pickaxe" title="Bronze Pickaxe"><img alt="Grid Bronze Pickaxe.png" src="/images/9/99/Grid_Bronze_Pickaxe.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="青銅鎬"><a href="/index.php?title=Bronze_Pickaxe" title="青銅鎬"><img alt="Grid Bronze Pickaxe.png" src="/images/9/99/Grid_Bronze_Pickaxe.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 </div></div><br style="clear:both" />
