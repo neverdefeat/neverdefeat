@@ -1,8 +1,8 @@
 ﻿<html>
 <title>創世神合成表
 </title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js">
-</script>
+<script src="jquery-1.8.1.min.js"></script>
+<script src="jquery-ui.js"></script>
 <style>
 html{font-family:標楷體;font-size:19px}
 .desc{background-color:rgb(225,255,255)}
@@ -11,19 +11,82 @@ html{font-family:標楷體;font-size:19px}
 a{text-decoration:none}
 a:visited{color:blue}
 a:hover{text-decoration:underline; cursor:pointer ;color:red} 
+#toc{background-color:rgb(225,255,255)}
 
+li{
+ float: none;
+}
+ul li:hover ul {
+  display: block;
+}
+ul ul {
+  display: none;
+}
 </style>
 <script >
-if(navigator.userAgent.match("Firefox")){
-$(meta).attr("charset","big-5");
-}
+
 
 </script>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+</head>
 <body>
-</table>
+
+<div style="float:right; clear:right; margin-bottom:.5em; padding:.5em 0 .8em 1.4em;  max-width:20em;"><span class="toclimit-5"><div id="toc" class="toc"><div id="toctitle"><h2 >目錄</h2>
+<div><ul ><li><span>展開</span>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Ores"><span class="tocnumber"></span> <span class="toctext">礦物</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Overworld"><span class="tocnumber"></span> <span class="toctext">環境</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Fluids"><span class="tocnumber"></span> <span class="toctext">流體</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Cables"><span class="tocnumber"></span> <span class="toctext">電線</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#EU_Storage"><span class="tocnumber"></span> <span class="toctext">儲電容器</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Blocks"><span class="tocnumber"></span> <span class="toctext">箱子</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Items"><span class="tocnumber"></span> <span class="toctext">物品</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Transformers"><span class="tocnumber"></span> <span class="toctext">變壓器</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Machine_Components"><span class="tocnumber"></span> <span class="toctext">機器零件</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Generators"><span class="tocnumber"></span> <span class="toctext">發電機</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#EU"><span class="tocnumber">6.1</span> <span class="toctext">EU</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Heat"><span class="tocnumber">6.2</span> <span class="toctext">Heat</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Kinetic"><span class="tocnumber">6.3</span> <span class="toctext">Kinetic</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Nuclear_Reactor"><span class="tocnumber">6.4</span> <span class="toctext">Nuclear Reactor</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Processors"><span class="tocnumber">7</span> <span class="toctext">Processors</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#Agriculture"><span class="tocnumber">8</span> <span class="toctext">Agriculture</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#Utility"><span class="tocnumber">9</span> <span class="toctext">Utility</span></a>
+<ul>
+<li class="toclevel-2 tocsection-20"><a href="#Miner"><span class="tocnumber">9.1</span> <span class="toctext">Miner</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Terraformer"><span class="tocnumber">9.2</span> <span class="toctext">Terraformer</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Upgrades"><span class="tocnumber">9.3</span> <span class="toctext">Upgrades</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-23"><a href="#Armor"><span class="tocnumber">10</span> <span class="toctext">Armor</span></a>
+<ul>
+<li class="toclevel-2 tocsection-24"><a href="#Material"><span class="tocnumber">10.1</span> <span class="toctext">Material</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Energy"><span class="tocnumber">10.2</span> <span class="toctext">Energy</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Utility_2"><span class="tocnumber">10.3</span> <span class="toctext">Utility</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-27"><a href="#Tools"><span class="tocnumber">11</span> <span class="toctext">Tools</span></a>
+<ul>
+<li class="toclevel-2 tocsection-28"><a href="#Material_2"><span class="tocnumber">11.1</span> <span class="toctext">Material</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Utility_3"><span class="tocnumber">11.2</span> <span class="toctext">Utility</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#Electric"><span class="tocnumber">11.3</span> <span class="toctext">Electric</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Agriculture_2"><span class="tocnumber">11.4</span> <span class="toctext">Agriculture</span></a></li>
+</ul>
+</li>
+</li>
+</ul>
+</ul>
+</div>
+</div>
+</div>
+</span></div>
+
 <h3><span class="mw-headline" id="Ores">工業模組新增礦物</span></h3>
 <table class="wikitable">
 
@@ -6590,15 +6653,15 @@ $(meta).attr("charset","big-5");
 <td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
 	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
 	<div style="left:14px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="RE Battery (Charged)"><a href="/index.php?title=RE_Battery_(Charged)" title="RE Battery (Charged)"><img alt="Grid RE Battery (Charged).png" src="/images/2/29/Grid_RE_Battery_%28Charged%29.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="充電電池(充滿)"><a href="/index.php?title=RE_Battery_(Charged)" title="充電電池(充滿)"><img alt="Grid RE Battery (Charged).png" src="Image/Grid/Grid_RE_Battery_(Charged).png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:14px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="RE Battery (Charged)"><a href="/index.php?title=RE_Battery_(Charged)" title="RE Battery (Charged)"><img alt="Grid RE Battery (Charged).png" src="/images/2/29/Grid_RE_Battery_%28Charged%29.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="充電電池(充滿)"><a href="/index.php?title=RE_Battery_(Charged)" title="充電電池(充滿)"><img alt="Grid RE Battery (Charged).png" src="Image/Grid/Grid_RE_Battery_(Charged).png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:14px; top:86px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="RE Battery (Charged)"><a href="/index.php?title=RE_Battery_(Charged)" title="RE Battery (Charged)"><img alt="Grid RE Battery (Charged).png" src="/images/2/29/Grid_RE_Battery_%28Charged%29.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="充電電池(充滿)"><a href="/index.php?title=RE_Battery_(Charged)" title="充電電池(充滿)"><img alt="Grid RE Battery (Charged).png" src="Image/Grid/Grid_RE_Battery_(Charged).png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:50px; top:14px; width:32px; height:32px; position:absolute;">
@@ -6612,27 +6675,27 @@ $(meta).attr("charset","big-5");
 <p><br />	
 </p>
 	<div style="left:86px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="RE Battery (Charged)"><a href="/index.php?title=RE_Battery_(Charged)" title="RE Battery (Charged)"><img alt="Grid RE Battery (Charged).png" src="/images/2/29/Grid_RE_Battery_%28Charged%29.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="充電電池(充滿)"><a href="/index.php?title=RE_Battery_(Charged)" title="充電電池(充滿)"><img alt="Grid RE Battery (Charged).png" src="Image/Grid/Grid_RE_Battery_(Charged).png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:86px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="RE Battery (Charged)"><a href="/index.php?title=RE_Battery_(Charged)" title="RE Battery (Charged)"><img alt="Grid RE Battery (Charged).png" src="/images/2/29/Grid_RE_Battery_%28Charged%29.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="充電電池(充滿)"><a href="/index.php?title=RE_Battery_(Charged)" title="充電電池(充滿)"><img alt="Grid RE Battery (Charged).png" src="Image/Grid/Grid_RE_Battery_(Charged).png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:86px; top:86px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="RE Battery (Charged)"><a href="/index.php?title=RE_Battery_(Charged)" title="RE Battery (Charged)"><img alt="Grid RE Battery (Charged).png" src="/images/2/29/Grid_RE_Battery_%28Charged%29.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="充電電池(充滿)"><a href="/index.php?title=RE_Battery_(Charged)" title="充電電池(充滿)"><img alt="Grid RE Battery (Charged).png" src="Image/Grid/Grid_RE_Battery_(Charged).png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Bat-Pack"><a href="/index.php?title=Bat-Pack" title="Bat-Pack"><img alt="Grid Bat-Pack.png" src="/images/5/53/Grid_Bat-Pack.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="充電背包"><a href="/index.php?title=Bat-Pack" title="充電背包"><img alt="Grid Bat-Pack.png" src="Image/Grid/Grid_Bat-Pack.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 </div></div><br style="clear:both" />
 </td>
-<td>Chestplate which powers your electric tools using its energy of up to 60,000 <a href="/index.php?title=EU" title="EU">EU</a> while you are wearing it.
+<td class="desc">當你穿著(胸甲部位)充電背包，使用等級1電力工具時，自動從電力背包消耗電力。
 </td></tr>
 <tr>
-<th class="name"><a href="/index.php?title=Adv.Batpack" title="Adv.Batpack" class="mw-redirect">Advanced Bat-Pack</a>
+<th class="name"><a href="/index.php?title=Adv.Batpack" title="進階充電背包" class="mw-redirect">進階充電背包</a>
 </th>
 <td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
 	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
@@ -6653,7 +6716,7 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:50px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Copper Item Casing"><a href="/index.php?title=Copper_Item_Casing" title="Copper Item Casing"><img alt="Grid Copper Item Casing.png" src="/images/e/e1/Grid_Copper_Item_Casing.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="銅外殼"><a href="/index.php?title=Copper_Item_Casing" title="銅外殼"><img alt="Grid Copper Item Casing.png" src="Image/Grid/Grid_Copper_Item_Casing.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 <p><br />	
@@ -6671,15 +6734,15 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Advanced_Batpack"><a href="/index.php?title=Advanced_Batpack" title="Advanced Batpack"><img alt="Grid Advanced Batpack.png" src="/images/f/fd/Grid_Advanced_Batpack.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="Advanced_Batpack"><a href="/index.php?title=Advanced_Batpack" title="進階充電背包"><img alt="Grid Advanced Batpack.png" src="Image/Grid/Grid_Advanced_Batpack.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 </div></div><br style="clear:both" />
 </td>
-<td>Chestplate which powers your electric tier 2 tools using its energy of up to 600,000 <a href="/index.php?title=EU" title="EU">EU</a> while you are wearing it.
+<td class="desc">當你穿著(胸甲部位)進階充電背包，使用等級2的電力工具時，自動從電力背包消耗電力。
 </td></tr>
 <tr>
-<th class="name"><a href="/index.php?title=Energypack" title="Energypack">Energy-Pack</a>
+<th class="name"><a href="/index.php?title=Energypack" title="高階能量背包">高階能量背包</a>
 </th>
 <td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
 	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
@@ -6718,15 +6781,15 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Energypack"><a href="/index.php?title=Energypack" title="Energypack"><img alt="Grid Energypack.png" src="/images/0/09/Grid_Energypack.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="高階能量背包"><a href="/index.php?title=Energypack" title="高階能量背包"><img alt="Grid Energypack.png" src="Image/Grid/Grid_Energypack.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 </div></div><br style="clear:both" />
 </td>
-<td>Chestplate which powers your electric tier 3 tools using its energy of up to 2,000,000 <a href="/index.php?title=EU" title="EU">EU</a> while you are wearing it.
+<td class="desc">當你穿著(胸甲部位)進階充電背包，使用等級3的電力工具時，自動從電力背包消耗電力。
 </td></tr>
 <tr>
-<th class="name"><a href="/index.php?title=Composite_Armor_Vest" title="Composite Armor Vest">Composite Armor</a>
+<th class="name"><a href="/index.php?title=Composite_Armor_Vest" title="複合胸甲">複合胸甲</a>
 </th>
 <td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
 	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
@@ -6745,11 +6808,11 @@ $(meta).attr("charset","big-5");
 <p><br />	
 </p>
 	<div style="left:50px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Iron Chestplate"><a href="/index.php?title=Iron_Chestplate" title="Iron Chestplate"><img alt="Grid Iron Chestplate.png" src="/images/8/8d/Grid_Iron_Chestplate.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="鐵胸甲"><a href="/index.php?title=Iron_Chestplate" title="鐵胸甲"><img alt="Grid Iron Chestplate.png" src="Image/Grid/Grid_Iron_Chestplate.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:50px; top:86px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Leather_Tunic"><a href="/index.php?title=Leather_Tunic" title="Leather Tunic"><img alt="Grid Leather Tunic.png" src="/images/e/ed/Grid_Leather_Tunic.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="皮革上衣"><a href="/index.php?title=Leather_Tunic" title="Leather Tunic"><img alt="Grid Leather Tunic.png" src="Image/Grid/Grid_Leather_Tunic.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:86px; top:14px; width:32px; height:32px; position:absolute;">
@@ -6765,15 +6828,15 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Composite Armor Vest"><a href="/index.php?title=Composite_Armor_Vest" title="Composite Armor Vest"><img alt="Grid Composite Armor Vest.png" src="/images/5/5b/Grid_Composite_Armor_Vest.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="複合胸甲"><a href="/index.php?title=Composite_Armor_Vest" title="複合胸甲"><img alt="Grid Composite Armor Vest.png" src="Image/Grid/Grid_Composite_Armor_Vest.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 </div></div><br style="clear:both" />
 </td>
-<td>Super-durable chestplate, more than 3 times the durability of a diamond chestplate.
+<td class="desc">比鑽石胸甲防禦力多0.5，耐久度是鑽石胸甲的3倍。
 </td></tr>
 <tr>
-<th class="name"><a href="/index.php?title=Electric_Jetpack" title="Electric Jetpack">Electric Jetpack</a>
+<th class="name"><a href="/index.php?title=Electric_Jetpack" title="電力飛行背包">電力飛行背包</a>
 </th>
 <td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
 	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
@@ -6812,109 +6875,15 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Electric Jetpack"><a href="/index.php?title=Electric_Jetpack" title="Electric Jetpack"><img alt="Grid Electric Jetpack.png" src="/images/e/e9/Grid_Electric_Jetpack.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="電力飛行背包"><a href="/index.php?title=Electric_Jetpack" title="電力飛行背包"><img alt="Grid Electric Jetpack.png" src="Image/Grid/Grid_Electric_Jetpack.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 </div></div><br style="clear:both" />
 </td>
-<td><a href="/index.php?title=EU" title="EU">Energy</a>-powered jetpack worn as a chestplate. It has a limited maximum flying height and a smaller operational time, unlike the normal fuel-powered <a href="/index.php?title=Jetpack" title="Jetpack">Jetpack</a>.
+<td class="desc">穿著(胸甲部位)電力飛行背包時，空白鍵壓著可以飛高高。
 </td></tr>
 <tr>
-<th class="name"><a href="/index.php?title=Jetpack" title="Jetpack">Jetpack</a>
-</th>
-<td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
-	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
-	<div style="left:14px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="鐵外殼"><a href="/index.php?title=Iron_Item_Casing" title="鐵外殼"><img alt="Grid Iron Item Casing.png" src="Image/Grid/Grid_Iron_Casing.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:14px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="鐵外殼"><a href="/index.php?title=Iron_Item_Casing" title="鐵外殼"><img alt="Grid Iron Item Casing.png" src="Image/Grid/Grid_Iron_Casing.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:14px; top:86px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="紅石"><a href="/index.php?title=Redstone" title="紅石"><img alt="Grid Redstone.png" src="Image/Grid/Grid_Redstone.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:50px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="一般電路板"><a href="/index.php?title=Electronic_Circuit" title="一般電路板"><img alt="Grid Electronic Circuit.png" src="Image/Grid/Grid_Electronic_Circuit.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:50px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="通用液體單元罐"><a href="/index.php?title=Universal_Fluid_Cell" title="通用液體單元罐"><img alt="Grid Universal Fluid Cell.png" src="Image/Grid/Grid_Universal_Fluid_Cell.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-<p><br />	
-</p>
-	<div style="left:86px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="鐵外殼"><a href="/index.php?title=Iron_Item_Casing" title="鐵外殼"><img alt="Grid Iron Item Casing.png" src="Image/Grid/Grid_Iron_Casing.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:86px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="鐵外殼"><a href="/index.php?title=Iron_Item_Casing" title="鐵外殼"><img alt="Grid Iron Item Casing.png" src="Image/Grid/Grid_Iron_Casing.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:86px; top:86px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="紅石"><a href="/index.php?title=Redstone" title="紅石"><img alt="Grid Redstone.png" src="Image/Grid/Grid_Redstone.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Jetpack"><a href="/index.php?title=Jetpack" title="Jetpack"><img alt="Grid Jetpack.png" src="/images/d/da/Grid_Jetpack.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-</div></div><br style="clear:both" />
-</td>
-<td><a href="/index.php?title=Fuel" title="Fuel" class="mw-redirect">Fuel</a>-powered tool that allows the player to fly while worn as a chestplate.  It lasts for 90 seconds when fully charged.
-</td></tr>
-<tr>
-<th class="name"><a href="/index.php?title=CFPack" title="CFPack">CFPack</a>
-</th>
-<td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
-	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
-	<div style="left:14px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="CF_Sprayer"><a href="/index.php?title=CF_Sprayer" title="CF Sprayer"><img alt="Grid CF Sprayer.png" src="/images/a/a2/Grid_CF_Sprayer.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:14px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Fuel_Can_(Empty)"><a href="/index.php?title=Fuel_Can_(Empty)" title="Fuel Can (Empty)"><img alt="Grid Fuel Can (Empty).png" src="/images/c/c9/Grid_Fuel_Can_%28Empty%29.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:14px; top:86px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Fuel_Can_(Empty)"><a href="/index.php?title=Fuel_Can_(Empty)" title="Fuel Can (Empty)"><img alt="Grid Fuel Can (Empty).png" src="/images/c/c9/Grid_Fuel_Can_%28Empty%29.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:50px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Electronic_Circuit"><a href="/index.php?title=Electronic_Circuit" title="一般電路板"><img alt="Grid Electronic Circuit.png" src="Image/Grid/Grid_Electronic_Circuit.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:50px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="鐵外殼"><a href="/index.php?title=Iron_Item_Casing" title="鐵外殼"><img alt="Grid Iron Item Casing.png" src="Image/Grid/Grid_Iron_Casing.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-<p><br />	
-</p>
-	<div style="left:86px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="CF_Sprayer"><a href="/index.php?title=CF_Sprayer" title="CF Sprayer"><img alt="Grid CF Sprayer.png" src="/images/a/a2/Grid_CF_Sprayer.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:86px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Fuel_Can_(Empty)"><a href="/index.php?title=Fuel_Can_(Empty)" title="Fuel Can (Empty)"><img alt="Grid Fuel Can (Empty).png" src="/images/c/c9/Grid_Fuel_Can_%28Empty%29.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:86px; top:86px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Fuel_Can_(Empty)"><a href="/index.php?title=Fuel_Can_(Empty)" title="Fuel Can (Empty)"><img alt="Grid Fuel Can (Empty).png" src="/images/c/c9/Grid_Fuel_Can_%28Empty%29.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="CFPack"><a href="/index.php?title=CFPack" title="CFPack"><img alt="Grid CFPack.png" src="/images/e/ec/Grid_CFPack.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-</div></div><br style="clear:both" />
-</td>
-<td>Chestplate that stores additional <a href="/index.php?title=CF_Pellet" title="CF Pellet">CF Pellets</a> to automatically reload a <a href="/index.php?title=CF_Sprayer" title="CF Sprayer">CF Sprayer</a>.
-</td></tr>
-<tr>
-<th class="name"><a href="/index.php?title=Scuba_Helmet" title="Scuba Helmet">Scuba Helmet</a>
+<th class="name"><a href="/index.php?title=Scuba_Helmet" title="防核頭盔">防核頭盔</a>
 </th>
 <td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
 	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
@@ -6929,7 +6898,7 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:50px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Orange Dye"><a href="/index.php?title=Orange_Dye" title="Orange Dye"><img alt="Grid Orange Dye.png" src="/images/b/b2/Grid_Orange_Dye.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="橘色染料"><a href="/index.php?title=Orange_Dye" title="橘色染料"><img alt="Grid Orange Dye.png" src="Image/Grid/Grid_Orange_Dye.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:50px; top:50px; width:32px; height:32px; position:absolute;">
@@ -6951,15 +6920,15 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Scuba Helmet"><a href="/index.php?title=Scuba_Helmet" title="Scuba Helmet"><img alt="Grid Scuba Helmet.png" src="/images/a/a6/Grid_Scuba_Helmet.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="防核頭盔"><a href="/index.php?title=Scuba_Helmet" title="防核頭盔"><img alt="Grid Scuba Helmet.png" src="Image/Grid/Grid_Scuba_Helmet.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 </div></div><br style="clear:both" />
 </td>
-<td>Helmet that refills your breath bar as long as you have <a href="/index.php?title=Compressed_Air_Cell" title="壓縮空氣單元罐">compressed air cells</a> in your inventory.
+<td class="desc">防核套裝之1，穿著防核套裝可以隔絕輻射、防火、防岩漿。
 </td></tr>
 <tr>
-<th class="name"><a href="/index.php?title=Hazmat_Suit" title="Hazmat Suit">Hazmat Suit</a>
+<th class="name"><a href="/index.php?title=Hazmat_Suit" title="防核衣">防核衣</a>
 </th>
 <td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
 	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
@@ -6978,11 +6947,11 @@ $(meta).attr("charset","big-5");
 <p><br />	
 </p>
 	<div style="left:50px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Orange Dye"><a href="/index.php?title=Orange_Dye" title="Orange Dye"><img alt="Grid Orange Dye.png" src="/images/b/b2/Grid_Orange_Dye.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="橘色染料"><a href="/index.php?title=Orange_Dye" title="橘色染料"><img alt="Grid Orange Dye.png" src="Image/Grid/Grid_Orange_Dye.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:50px; top:86px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Orange Dye"><a href="/index.php?title=Orange_Dye" title="Orange Dye"><img alt="Grid Orange Dye.png" src="/images/b/b2/Grid_Orange_Dye.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="橘色染料"><a href="/index.php?title=Orange_Dye" title="橘色染料"><img alt="Grid Orange Dye.png" src="Image/Grid/Grid_Orange_Dye.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:86px; top:14px; width:32px; height:32px; position:absolute;">
@@ -6998,15 +6967,15 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Hazmat Suit"><a href="/index.php?title=Hazmat_Suit" title="Hazmat Suit"><img alt="Grid Hazmat Suit.png" src="/images/1/10/Grid_Hazmat_Suit.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="防核衣"><a href="/index.php?title=Hazmat_Suit" title="防核衣"><img alt="Grid Hazmat Suit.png" src="Image/Grid/Grid_Hazmat_Suit.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 </div></div><br style="clear:both" />
 </td>
-<td>A chestplate that provides protection from environmental dangers such as fire, lava, <a href="/index.php?title=Nuclear_Reactor" title="核反應爐">Nuclear Reactors</a>, and other effects.
+<td class="desc">防核套裝之1，穿著防核套裝可以隔絕輻射、防火、防岩漿。
 </td></tr>
 <tr>
-<th class="name"><a href="/index.php?title=Hazmat_Suit_Leggings" title="Hazmat Suit Leggings">Hazmat Suit Leggings</a>
+<th class="name"><a href="/index.php?title=Hazmat_Suit_Leggings" title="防核護腿">防核護腿</a>
 </th>
 <td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
 	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
@@ -7023,7 +6992,7 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:50px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Orange Dye"><a href="/index.php?title=Orange_Dye" title="Orange Dye"><img alt="Grid Orange Dye.png" src="/images/b/b2/Grid_Orange_Dye.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="橘色染料"><a href="/index.php?title=Orange_Dye" title="橘色染料"><img alt="Grid Orange Dye.png" src="Image/Grid/Grid_Orange_Dye.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 <p><br />	
@@ -7041,15 +7010,15 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Hazmat Suit Leggings"><a href="/index.php?title=Hazmat_Suit_Leggings" title="Hazmat Suit Leggings"><img alt="Grid Hazmat Suit Leggings.png" src="/images/7/7b/Grid_Hazmat_Suit_Leggings.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="防核護腿"><a href="/index.php?title=Hazmat_Suit_Leggings" title="防核護腿"><img alt="Grid Hazmat Suit Leggings.png" src="Image/Grid/Grid_Hazmat_Suit_Leggings.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 </div></div><br style="clear:both" />
 </td>
-<td>A pair of leggings that provide protection from environmental dangers such as fire, lava, <a href="/index.php?title=Nuclear_Reactor" title="核反應爐">Nuclear Reactors</a>, and other effects.
+<td class="desc">防核套裝之1，穿著防核套裝可以隔絕輻射、防火、防岩漿。
 </td></tr>
 <tr>
-<th class="name"><a href="/index.php?title=Rubber_Boots" title="Rubber Boots">Rubber Boots</a>
+<th class="name"><a href="/index.php?title=Rubber_Boots" title="橡膠靴子">橡膠靴子</a>
 </th>
 <td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
 	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
@@ -7068,7 +7037,7 @@ $(meta).attr("charset","big-5");
 <p><br />	
 </p>
 	<div style="left:50px; top:86px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Wool"><a href="/index.php?title=Wool" title="Wool"><img alt="Grid Wool.png" src="/images/3/37/Grid_Wool.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="羊毛"><a href="/index.php?title=Wool" title="羊毛"><img alt="Grid Wool.png" src="Image/Grid/Grid_Wool.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:86px; top:14px; width:32px; height:32px; position:absolute;">
@@ -7084,15 +7053,15 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Rubber Boots"><a href="/index.php?title=Rubber_Boots" title="Rubber Boots"><img alt="Grid Rubber Boots.png" src="/images/c/c4/Grid_Rubber_Boots.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="橡膠靴子"><a href="/index.php?title=Rubber_Boots" title="橡膠靴子"><img alt="Grid Rubber Boots.png" src="Image/Grid/Grid_Rubber_Boots.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 </div></div><br style="clear:both" />
 </td>
-<td>Boots that reduce your fall damage.
+<td class="desc">穿著靴子可以防止墜弱傷害。防核套裝之1，穿著防核套裝可以隔絕輻射、防火、防岩漿。
 </td></tr>
 <tr>
-<th class="name"><a href="/index.php?title=Static_Boots" title="Static Boots">Static Boots</a>
+<th class="name"><a href="/index.php?title=Static_Boots" title="靜電靴子">Static Boots</a>
 </th>
 <td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
 	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
@@ -7111,7 +7080,7 @@ $(meta).attr("charset","big-5");
 <p><br />	
 </p>
 	<div style="left:50px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Wool"><a href="/index.php?title=Wool" title="Wool"><img alt="Grid Wool.png" src="/images/3/37/Grid_Wool.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="羊毛"><a href="/index.php?title=Wool" title="羊毛"><img alt="Grid Wool.png" src="Image/Grid/Grid_Wool.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:50px; top:86px; width:32px; height:32px; position:absolute;">
@@ -7131,15 +7100,15 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Static Boots"><a href="/index.php?title=Static_Boots" title="Static Boots"><img alt="Grid Static Boots.png" src="/images/7/77/Grid_Static_Boots.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="靜電靴子"><a href="/index.php?title=Static_Boots" title="靜電靴子"><img alt="Grid Static Boots.png" src="Image/Grid/Grid_Static_Boots.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 </div></div><br style="clear:both" />
 </td>
-<td><a href="/index.php?title=EU" title="EU">Energy</a>-based boots that will charge a <a href="/index.php?title=BatPack" title="充電背包">BatPack</a> or a <a href="/index.php?title=LapPack" title="LapPack">LapPack</a> while walking.
+<td class="desc">當你走動時，會幫充電背包充電。
 </td></tr>
 <tr>
-<th class="name"><a href="/index.php?title=Solar_Helmet" title="Solar Helmet">Solar Helmet</a>
+<th class="name"><a href="/index.php?title=Solar_Helmet" title="太陽能頭盔">太陽能頭盔</a>
 </th>
 <td><div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
 	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
@@ -7160,7 +7129,7 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:50px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Solar_Panel"><a href="/index.php?title=Solar_Panel" title="太陽能發電機"><img alt="Grid Solar Panel.png" src="Image/Grid/Grid_Solar_Panel.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="太陽能發電機"><a href="/index.php?title=Solar_Panel" title="太陽能發電機"><img alt="Grid Solar Panel.png" src="Image/Grid/Grid_Solar_Panel.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:50px; top:86px; width:32px; height:32px; position:absolute;">
@@ -7180,52 +7149,20 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Solar Helmet"><a href="/index.php?title=Solar_Helmet" title="Solar Helmet"><img alt="Grid Solar Helmet.png" src="/images/8/8a/Grid_Solar_Helmet.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="太陽能頭盔"><a href="/index.php?title=Solar_Helmet" title="太陽能頭盔"><img alt="Grid Solar Helmet.png" src="Image/Grid/Grid_Solar_Helmet.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 </div></div><br style="clear:both" />
-<div style="float:left; overflow:hidden;"><div style="left:0px; top:0px; width:256px; height:132px; position:relative;">
-	<div style="left:0px; top:0px; width:256px; height:132px;"><img alt="" src="Image/Crafting_GUI.png" width="256" height="132" /></div>
-<p><br />	
-</p>
-	<div style="left:14px; top:86px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Insulated_Copper_Cable"><a href="/index.php?title=Insulated_Copper_Cable" title="絕緣銅電線"><img alt="Grid Insulated Copper Cable.png" src="Image/Grid/Grid_Insulated_Copper_Cable.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:50px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Iron Helmet"><a href="/index.php?title=Iron_Helmet" title="Iron Helmet"><img alt="Grid Iron Helmet.png" src="/images/e/ec/Grid_Iron_Helmet.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:50px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Solar_Panel"><a href="/index.php?title=Solar_Panel" title="太陽能發電機"><img alt="Grid Solar Panel.png" src="Image/Grid/Grid_Solar_Panel.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:50px; top:86px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Insulated_Copper_Cable"><a href="/index.php?title=Insulated_Copper_Cable" title="絕緣銅電線"><img alt="Grid Insulated Copper Cable.png" src="Image/Grid/Grid_Insulated_Copper_Cable.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-<p><br />	
-</p>
-	<div style="left:86px; top:86px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Insulated_Copper_Cable"><a href="/index.php?title=Insulated_Copper_Cable" title="絕緣銅電線"><img alt="Grid Insulated Copper Cable.png" src="Image/Grid/Grid_Insulated_Copper_Cable.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-	<div style="left:202px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Solar Helmet"><a href="/index.php?title=Solar_Helmet" title="Solar Helmet"><img alt="Grid Solar Helmet.png" src="/images/8/8a/Grid_Solar_Helmet.png" width="32" height="32" class="crafting-grid-image" /></a>
-</div></div>
-	</div>
-</div></div><br style="clear:both" />
-</td>
-<td><a href="/index.php?title=EU" title="EU">Energy</a>-based helmet that will charge a <a href="/index.php?title=BatPack" title="充電背包">BatPack</a> or a <a href="/index.php?title=LapPack" title="LapPack">LapPack</a> from the sunlight.
+<td class="desc">吸收太陽轉成電力幫充電背包充電。
 </td></tr></table>
-<h2><span class="mw-headline" id="Tools">Tools</span></h2>
-<h3><span class="mw-headline" id="Material_2">Material</span></h3>
+<h2><span class="mw-headline" id="Tools">工具</span></h2>
+<h3><span class="mw-headline" id="Material_2">青銅工具</span></h3>
 <table class="wikitable">
 
 <tr>
 <th width="120px" class="title">名字
 </th>
-<th width="256px" class="title">Recipe
+<th width="256px" class="title">合成表
 </th>
 <th class="title">說明
 </th></tr>
@@ -7585,7 +7522,7 @@ $(meta).attr("charset","big-5");
 </div></div>
 	</div>
 	<div style="left:50px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Wool"><a href="/index.php?title=Wool" title="Wool"><img alt="Grid Wool.png" src="/images/3/37/Grid_Wool.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="羊毛"><a href="/index.php?title=Wool" title="羊毛"><img alt="Grid Wool.png" src="Image/Grid/Grid_Wool.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:50px; top:50px; width:32px; height:32px; position:absolute;">
@@ -7595,11 +7532,11 @@ $(meta).attr("charset","big-5");
 <p><br />	
 </p>
 	<div style="left:86px; top:14px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Wool"><a href="/index.php?title=Wool" title="Wool"><img alt="Grid Wool.png" src="/images/3/37/Grid_Wool.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="羊毛"><a href="/index.php?title=Wool" title="羊毛"><img alt="Grid Wool.png" src="Image/Grid/Grid_Wool.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 	<div style="left:86px; top:50px; width:32px; height:32px; position:absolute;">
-		<div class="crafting-grid-div"><div class="tooltip" title="Wool"><a href="/index.php?title=Wool" title="Wool"><img alt="Grid Wool.png" src="/images/3/37/Grid_Wool.png" width="32" height="32" class="crafting-grid-image" /></a>
+		<div class="crafting-grid-div"><div class="tooltip" title="羊毛"><a href="/index.php?title=Wool" title="羊毛"><img alt="Grid Wool.png" src="Image/Grid/Grid_Wool.png" width="32" height="32" class="crafting-grid-image" /></a>
 </div></div>
 	</div>
 <p><br />	
