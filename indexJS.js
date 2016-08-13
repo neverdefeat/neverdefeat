@@ -83,7 +83,8 @@ $.fn.pinFooter = function(options) {
 
 $(document).ready(function() {
 
-$("body").tabs();
+$("#body").tabs();
+$("#server").tabs();
 $.ajax({
   type: "GET",
 

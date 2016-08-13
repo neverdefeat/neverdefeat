@@ -9,7 +9,9 @@
 
 <title>NeverDefeat</title>
 <style>
-
+body{
+height:1000px;
+}
 #tabs{
 background-color:rgb(0, 255, 180);
 width:100%;
@@ -166,7 +168,12 @@ top:-23px;
 position: relative;
 top:-43px;
 }
+#title_logo{
+position: relative;
+height:90px;
+width:800px;
 
+}
 
 </style>
 <script>
@@ -185,11 +192,16 @@ alert("抱歉，網頁目前不支援火狐...");
 <head>
 <meta  charset="utf-8">
 </head>
-<body>
+<body style="background-color:rgb(126,206,244);">
+<div id="body">
 <div class="title_area">
 <nav class="top_bar">
 <ul class="u_left">
-	<li class="title_bar" ><a href="#tab_1" id="logo"><img height="34px" width="200px" src="Image\html\NeverDefeat.png"><img></a></li>
+	<li class="title_bar" ><div id="title_logo" background="Image\html\NDlogoBG.png">
+    <img id="NDlogo" height="70px" width="90px" src="Image\html\NDlogo.png"></img>
+    <a href="#tab_1" id="logo">
+    <img id="NDtitle" height="60px" width="340px" src="Image\html\NeverDefeat.png"></img>
+    </a></div></li>
 	<li class="title_bar" id="tb1"><a href="#tab_2"><img src="Image\html\about.png"><img></a></li>
 	
 	<li class="title_bar" id="tb2"><a href="#tab_3"><img  src="Image\html\NDserver.png"><img></a></li>
@@ -224,6 +236,19 @@ alert("抱歉，網頁目前不支援火狐...");
 
 </br>
 <div id="tab_3"><p></p>
+<div id="server">
+<div class="title_area">
+<nav class="top_bar">
+<ul>
+ <li class="title_bar"><a href="#tutorial">教學</a></li>
+ <li class="title_bar"><a href="#rule">規則</a></li>
+ <li class="title_bar"><a href="#serverIntro">介紹</a></li>
+ <li class="title_bar"><a href="#Playercmd">指令</a></li>  
+ </ul>
+ </nav >
+ </div>
+ </br>
+<div id="tutorial">
 <ol>
 <li><b style="color:red">領取懶人包:</b>下載<a href="https://drive.google.com/open?id=0B41jf9uHbG6xd1J1bnA0eGhBdkk">懶人包(含Hamachi)</a>並解壓縮。</li>
 <li><b style="color:red">執行登入器:</b>打開Windows資料夾，執行Shiginima Launcher的exe檔。</li>
@@ -249,6 +274,19 @@ alert("抱歉，網頁目前不支援火狐...");
 <a href="http://www.8minecraft.org/darklands-classic-x32-medieval-resource/">中世紀風格</a>&nbsp;&nbsp;<a href="http://www.8minecraft.org/darklands-classic-x32-medieval-resource/">載點</a>
 </div>
 </div>
+<div id="rule">rule
+<ul>
+<li>和平共處</li>
+</ul>
+</div>
+<div id="serverIntro">Intro
+<p>伺服器含有工業模組、鐵道模組。</p>
+</div>
+<div id="Playercmd">Command
+<p>/bs       可以打開商店。</p>
+</div>
+</div>
+</div>
 <div id="tab_4"><p></p>
 <div id="ic"></div>
 
@@ -266,6 +304,7 @@ alert("抱歉，網頁目前不支援火狐...");
     <div id="firehide" style="text-align:center;" > <p id="coppyright" style="font-size:19px ">&copy; Copyright 2016,NeverDefeat.</p>
     <p id="contact">連絡我們/Contact us: hankyychen@gmail.com</p>
     </div>
+</div>
 </div>
 </body>
 </html>
