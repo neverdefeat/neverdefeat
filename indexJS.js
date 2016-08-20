@@ -137,7 +137,8 @@ ping = function(ip, callback) {
 //使用：
 new ping('25.60.9.456', function(status, e) {
 // reponded timeout
- if(status=='responded'){$("#c1").hide();$("#c2").hide();}
- else if(status=='timeout'){$("#c2").hide();$("#c3").hide();}
+ if(status=='responded'){$("#c1").append("<img style='width:50px;height:50px' src='Image/html/greenlight.png'></img>");}
+ else if(status=='timeout'){$("#c2").append("<img style='width:50px;height:50px' src='Image/html/redlight.png'></img>");}
+ else{$("#c3").append("<img style='width:50px;height:50px' src='Image/html/yellowlight.png'></img>");}
 
 });
